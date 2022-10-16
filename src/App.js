@@ -1,25 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import SheetMusic from 'react-sheet-music';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SheetMusic
+      // Textual representation of music in ABC notation
+      // The string below will show four crotchets in one bar
+      notation="|G'8|G'8|G'8|G'8|"
+
+      
+    />
   );
-}
+};
+
+
 
 export default App;
